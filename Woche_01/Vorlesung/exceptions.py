@@ -8,7 +8,7 @@ Try-Except Statements abfangen.
 
 def division(x, y):
 
-    # Die Anweisung im Try-Block wird zeurst ausgefuehrt
+    # Die Anweisung im Try-Block wird zuerst ausgefuehrt
     try:
         print(x/y)
     except ZeroDivisionError: # Falls dieser Fehler auftritt wird die Anweisung ausgefuehrt
