@@ -15,7 +15,7 @@ finden.
 
 **Bemerkung:** Im Gegensatz zu der String-Methode ```.split()``` müssen wir das Trennzeichen der Wörter nicht kennen. Außerdem liefert die Funktion ```next_word(s)``` lediglich das erste Wort und den Rest des Strings. Die Methode ```.split()```  liefert eine Liste mit aller Wörter, sofern das Trennzeichen dieser Wörter bekannt ist. Bei gewöhnlichen Texten (Wörter und Leerzeichen als Trennzeichen) empfiehlt sich daher ```.split()``` und ```.join()``` zu benutzen.
 ## Aufgabe 1 - Pandas
-Im gleichen Repo wie diese Übung liegt die Spotify-2000.csv
+Im gleichen Repository und Ordner wie diese Übung liegt die Datei Spotify-2000.csv
 a) Führen sie die benötigten Vorbereitungen aus und laden Sie die csv als Pandas DataFrame.
 b) Schreiben Sie eine Funktion, die den DataFrame und Namen eines Artists als Argument erwartet und die Anzahl der Songs dieses Artists zurückgibt. Dank der Filter-Optionen in Pandas ist dies in einer Zeile möglich.
 
