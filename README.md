@@ -16,8 +16,7 @@ der Datenanalyse)
 - Vertiefung Visualisierung von Daten
 
 ## Teilnahmevoraussetzungen
-Eine vorangegangene Teilnahme am DATAx-Kurs "Einführung in die Programmierung mit Python zur Datenanalyse" (Leuphana 
-Semester) oder vergleichbare grundlegende Kenntnisse der Programmierung und Datenanalyse sind erforderlich. Für eine 
+Eine vorangegangene Teilnahme am DATAx-Kurs "Einführung in die Programmierung mit Python zur Datenanalyse" oder vergleichbare grundlegende Kenntnisse der Programmierung und Datenanalyse sind erforderlich. Für eine 
 erfolgreiche Teilnahme ist es ferner erforderlich, die Vorlesung und Übung umfangreich vor- und nachzuarbeiten.
 
 ## Studienleistung
