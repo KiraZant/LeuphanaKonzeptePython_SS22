@@ -1,0 +1,1 @@
+# In dieser Aufgabe können Sie Funktionen nutzen, müssen dies aber nicht
