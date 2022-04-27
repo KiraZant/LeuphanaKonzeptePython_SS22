@@ -31,7 +31,7 @@ Schreiben Sie die Funktion scale(x), die die Werte eines Arrays durch sogennante
 originalen Arrays wird also zu 0 und der größte zu 1. Alle weiteren Werte liegen dazwischen. 
 
 Formel:  
-![alt-text](/Volumes/nonshib-webdav/Python_Kurs/SS_2022/Python_DataX_SS22/04_Datenstrukturen/Woche_04/Übung/formula.png "Min-Max-Skalierung")  
+![Min-Max-Skalierung](https://github.com/KiraZant/LeuphanaKonzeptePython_SS22/blob/main/Woche_04/%C3%9Cbung/formula.png)  
 
 Note: Ggf. muss um das Bild zu sehen der Path angepasst werden (der Path zum Ordner in dem dieser Code + das Bild liegen).   
 
