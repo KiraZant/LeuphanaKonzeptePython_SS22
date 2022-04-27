@@ -7,8 +7,10 @@ with open('iris.json') as json_file:
 
 # 2. Berechnen Sie den durchschnittlichen Wert der Tabelle 'sepalLength'
 # (Ohne die Datei in ein Pandas Dataframe umzuwandeln)
+print(sum([item['sepalLength'] for item in df_js]) / len([item['sepalLength'] for item in df_js]))
 
 #  3. Wiederhole Sie den gleichen Vorgang mit der iris.csv Datei, hierbei können Sie Pandas nutzen.
 import pandas as pd
 
 df_csv = pd.read_csv('iris.csv')
+print(df_csv['sepal.length'].mean())
