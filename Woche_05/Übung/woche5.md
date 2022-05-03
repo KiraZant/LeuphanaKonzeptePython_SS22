@@ -53,7 +53,7 @@ print(b == c) # ->
 
 ### Voraussetzungen implementieren - Fortgeschritten
 
-**g)** Nun werden wir uns auf den ```LeuphanaEconCourse``` konzentrieren. Wir wollen Funktionalität implementieren, um festzustellen, ob ein Wirtschaftskurs Voraussetzung für einen anderen ist.
+**f)** Nun werden wir uns auf den ```LeuphanaEconCourse``` konzentrieren. Wir wollen Funktionalität implementieren, um festzustellen, ob ein Wirtschaftskurs Voraussetzung für einen anderen ist.
 
 Wir gehen davon aus, dass die Reihenfolge der Kurse durch den numerischen Kurscode bestimmt wird. Wenn die Zahl an der 5. Stelle geringer ist, muss der Kurs davor belegt werden, zum Beispiel ````33027000```` vor ```33026000```. Alle anderen Zahlen (außer die 5.Stelle) muss gleich sein. 
 
