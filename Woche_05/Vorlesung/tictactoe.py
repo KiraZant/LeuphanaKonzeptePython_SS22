@@ -1,8 +1,6 @@
 class TicTacToe:
     """
     This class implements the game logic of Tic-Tac-Toe.
-    Update method should be called whenever a player should make a turn
-    Reset_field method should be called when the game is over and a re-match is wanted
     """
     def __init__(self):
         self.__field = {i: str(i) for i in range(1, 10)}
