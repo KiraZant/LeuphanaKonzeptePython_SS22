@@ -43,19 +43,19 @@ Dieses Problem wird **Gitterwege** genannt. An jedem Punkt des Gitters gibt es n
 
 **a)** Schreiben Sie zunächst eine rekursive (nicht memoisierte) Funktion, um die Anzahl der Pfade von der linken oberen Ecke eines (n x m) Gitters (n Zeilen und m Spalten) bis zur rechten unteren Ecke zu berechnen.
 
-*Zur Kontrolle*: \\
-Für m=n=2 -> Rückgabewert: 6 \\
-Für m=n=6 -> Rückgabewert: 924 \\
+*Zur Kontrolle*: <br>
+Für m=n=2 -> Rückgabewert: 6 <br>
+Für m=n=6 -> Rückgabewert: 924 <br>
 Für hohe (n, m) braucht die Berechnung ohne Memoisierung viel zu lange.
 
 **b)** Die Art und Weise, wie der obige Code aufgebaut ist, führt zu vielen wiederholten Aufrufen von gleichen Funktionen. Wenn Sie z.B. am oberen Ende eines 20x20-Rasters beginnen und dann nach unten und rechts gehen, dann rufen Sie die Funktion für ein 19x19-Raster auf. Dasselbe gilt, wenn Sie nach rechts und dann nach unten gehen. An dieser Stelle kommt die Memoisierung ins Spiel. Die Ausgabe der Funktion wird beim ersten Aufruf in einem Dictionary gespeichert, sodass ab dem zweiten Aufruf sofort der Wert aus dem Dictionary zurückgegeben wird, damit wir Aufrufe nicht zweimal machen. 
 
 Die Schlüssel-Wert Paare des Dictionarys sind also $(n,m)$-Tupel mit dazugehöriger Ausgabe. Stellen Sie sicher, dass Sie zu Beginn der Funktionsausführung überprüfen, ob das Tupel $(n,m)$ im Memoization Dictionary vorhanden ist.
 
-*Zur Kontrolle*: \\
-Für m=n=2 -> Rückgabewert: 6 \\
-Für m=n=6 -> Rückgabewert: 924 \\
-Für m=n=20 -> Rückgabewert: 137846528820 \\
-Für m=n=40 -> Rückgabewert: 107507208733336176461620 \\
+*Zur Kontrolle*: <br>
+Für m=n=2 -> Rückgabewert: 6 <br>
+Für m=n=6 -> Rückgabewert: 924 <br>
+Für m=n=20 -> Rückgabewert: 137846528820 <br>
+Für m=n=40 -> Rückgabewert: 107507208733336176461620 <br>
 Durch Memoisierung ist die Berechnung jetzt auch für hohe (m, n) schnell durchführbar.
 
