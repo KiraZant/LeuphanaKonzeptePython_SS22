@@ -50,7 +50,7 @@ Für hohe (n, m) braucht die Berechnung ohne Memoisierung viel zu lange.
 
 **b)** Die Art und Weise, wie der obige Code aufgebaut ist, führt zu vielen wiederholten Aufrufen von gleichen Funktionen. Wenn Sie z.B. am oberen Ende eines 20x20-Rasters beginnen und dann nach unten und rechts gehen, dann rufen Sie die Funktion für ein 19x19-Raster auf. Dasselbe gilt, wenn Sie nach rechts und dann nach unten gehen. An dieser Stelle kommt die Memoisierung ins Spiel. Die Ausgabe der Funktion wird beim ersten Aufruf in einem Dictionary gespeichert, sodass ab dem zweiten Aufruf sofort der Wert aus dem Dictionary zurückgegeben wird, damit wir Aufrufe nicht zweimal machen. 
 
-Die Schlüssel-Wert Paare des Dictionarys sind also $(n,m)$-Tupel mit dazugehöriger Ausgabe. Stellen Sie sicher, dass Sie zu Beginn der Funktionsausführung überprüfen, ob das Tupel $(n,m)$ im Memoization Dictionary vorhanden ist.
+Die Schlüssel-Wert Paare des Dictionarys sind also (n,m)-Tupel mit dazugehöriger Ausgabe. Stellen Sie sicher, dass Sie zu Beginn der Funktionsausführung überprüfen, ob das Tupel (n,m) im Memoization Dictionary vorhanden ist.
 
 *Zur Kontrolle*: <br>
 Für m=n=2 -> Rückgabewert: 6 <br>
