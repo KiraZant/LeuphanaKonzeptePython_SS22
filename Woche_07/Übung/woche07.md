@@ -2,7 +2,7 @@
 
 ## Aufgabe 1
 
-Der folgende Pseudocode beschreibt den *Insertion Sort*-Algorithmus, der als Eingabe ein Array *A* der Länge *n* verwendet.
+Der folgende Pseudocode beschreibt den *Insertion Sort*-Algorithmus, der als Eingabe eine Liste *A* der Länge *n* verwendet.
 Der Befehl ```swap(A[pos], A[pos-1])``` bedeutet, dass die Elemente ```A[pos]``` und ```A[pos-1]``` getauscht werden. <br>
 **In dieser Aufgabe müssen Sie keinen Code implementieren.**
 
