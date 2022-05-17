@@ -31,11 +31,11 @@ A_1 = [1, 2, 3, 4, 7]
 A_2 = [-1, 0, 4, 7, 10]
 ==> [4, 7]
 ```
-a) Programmieren Sie einen naiven Algorithmus für dieses Problem und bestimmen Sie dessen Laufzeit in Abhängigkeit von 
+a) Implementieren Sie einen naiven Algorithmus für dieses Problem und bestimmen Sie dessen Laufzeit in Abhängigkeit von 
 den Listengrößen *|A_1|* und *|A_2|*. Dieser Algorithmus soll auch für *nicht-sortierte* Listen funktionieren.<br>
 *Bemerkung: Mit *|A_1|* bzw. *|A_2|* ist die Anzahl der Elemente in der Liste *A_1* bzw. *A_2* gemeint.*
 
-b) Programmieren Sie einen Algorithmus, der dieses Problem in Zeit *O(|A_1|+|A_2|)* löst, falls die beiden Listen 
+b) Implementieren Sie einen Algorithmus, der dieses Problem in Zeit *O(|A_1|+|A_2|)* löst, falls die beiden Listen 
 bereits sortiert sind. Begründen Sie die lineare Laufzeit. 
 
 ## Aufgabe 3
