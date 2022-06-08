@@ -4,7 +4,7 @@ import seaborn as sns
 #from pandas_profiling import ProfileReport
 
 # Load the Titanic dataset
-dataset = pd.read_csv('/Users/kirstenzantvoort/PycharmProjects/LeuphanaKonzeptePython_SS22_InClass/Woche_10/Vorlesung/titanic.csv')
+dataset = pd.read_csv('//Woche_10/Vorlesung/titanic.csv')
 #dataset.drop(columns=['class', 'Sex', 'deck', 'alone'], inplace=True)
 print('- - - Head and Datatypes - - -')
 print(dataset.head())
