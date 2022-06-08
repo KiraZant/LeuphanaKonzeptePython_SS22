@@ -19,12 +19,6 @@ print(aggregation)
 # Use Pivot Tables to generate insights
 print('- - - Survival Rate per sex and class - - -')
 print(dataset.pivot_table(values='Survived', index='Sex', columns='Pclass', aggfunc='mean'))
-print('- - - Average age per sex and class - - -')
-print(dataset.pivot_table(values='Age', index='Sex', columns='Pclass', aggfunc='mean'))
-print('- - - Average fare per survival state and class - - -')
-print(dataset.pivot_table(values='Fare', index='Survived', columns='Pclass', aggfunc='mean'))
-print('- - - Embarking per City per Class')
-print(dataset.pivot_table(values='Survived', index='Embarked', columns='Pclass', aggfunc='count'))
 
 # Create ProfileReport
 #report = ProfileReport(dataset)
