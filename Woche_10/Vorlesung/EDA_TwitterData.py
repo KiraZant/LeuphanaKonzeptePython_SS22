@@ -21,7 +21,7 @@ def tweet_cleaner(text):
 
 
 # #Python Daten laden
-dataset = pd.read_csv('../../Woche_09/Übung/TweetsPython.csv')
+dataset = pd.read_csv('/Users/kirstenzantvoort/PycharmProjects/LeuphanaKonzeptePython_SS22_InClass/Woche_09/Übung/TweetsPython.csv')
 # Cleaning der tweets
 dataset['text'] = dataset['text'].apply(func=tweet_cleaner)
 

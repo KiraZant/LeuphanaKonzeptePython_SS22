@@ -2,7 +2,7 @@ import re
 from bs4 import BeautifulSoup
 import pandas as pd
 
-tweets = pd.read_csv('../../09_Datenquellen/Übung/TweetsML.csv')
+tweets = pd.read_csv('/Users/kirstenzantvoort/PycharmProjects/LeuphanaKonzeptePython_SS22_InClass/Woche_9/Übung/TweetsML.csv')
 print(tweets.head(10))
 
 print([text for text in tweets['text'].head(15)])
