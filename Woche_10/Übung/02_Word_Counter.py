@@ -9,7 +9,7 @@ error-codes und googlen Sie wenn nötig welche Schritte sinnvoll sind.
 
 from wordcloud import WordCloud
 
-# a) Laden Sie einen der mit Clean_Tweets.py gesäuberten Datensätze mit dem Namensanhang '_Cleaned.csv'
+# a) Laden Sie einen der  mit Clean_Tweets.py gesäuberten Datensätze mit dem Namensanhang '_Cleaned.csv'
 
 # b) Nutzen Sie das gelernte aus Aufgabe 1 und übertragen Sie alle Wörter in eine flat-Liste
 # (hier sind ggf. weitere Schritte notwendig)
