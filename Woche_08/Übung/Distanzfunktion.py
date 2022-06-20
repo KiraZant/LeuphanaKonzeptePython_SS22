@@ -7,14 +7,14 @@ Arrays hinweg zu vollführen (Vectorization), wie in VL 4 besprochen wurden. Wen
 sinnvoll anwenden, sind die Funktionen in jeweils einer Zeile Code möglich.
 """
 # Pakete importieren
-
+import numpy as np
 #a)
 def euclidean_distance(x, y):
-    pass
+    return np.sqrt(np.sum(np.square(x-y)))
 
 #b)
 def manhattan_distance(x, y):
-    pass
+    return np.sum(np.abs(x-y))
 
 
 # Test Case

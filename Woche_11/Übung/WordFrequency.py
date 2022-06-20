@@ -12,12 +12,10 @@ Beispiel (Reihenfolge ist irrelevant):
 word_index("A rose is a rose".split()) -> {'rose': 0, 'a': 1, 'is': 2}
 """
 from scipy.sparse import dok_matrix
-import pandas as pd
-from Distanzmetriken import cosine_similarity, similarity
+
 
 def word_index(words):
-    words = [word.lower() for word in words]
-    return {i: j for i, j in zip(set(words), range(len(set(words))))}
+    pass
 
 """
 b. Erstellen Sie die Funktion word_count(), die eine Liste an Texten erwartet (in Form von Wörtern innerhalb einer 
@@ -32,16 +30,7 @@ Hierfür kann ein for-loop mehr Sinn ergeben, als eine Comprehension.
 """
 
 def word_count(text_list):
-    all_words = [word.lower() for text in text_list for word in text.split()]
-    vocabulary = word_index(all_words)
-
-    matrix = dok_matrix((len(text_list), len(vocabulary)), dtype='int32')
-
-    for i in range(len(text_list)):
-        for word in text_list[i].split(' '):
-            j = vocabulary[word.lower()]
-            matrix[i, j] += 1
-    return vocabulary, matrix
+    pass
 
 """
 c) Anwendung: Um die Ähnlichkeit von Sätzen zu bestimmen, kann die Anzahl der sich überlappenden Wörter bestimmt werden.
@@ -51,12 +40,3 @@ tweets für den tweet mit dem Index 37 ('defining the problem in your data scien
 Was fällt Ihnen auf?
 
 """
-dataset = pd.read_csv('/Users/kirstenzantvoort/PycharmProjects/LeuphanaKonzeptePython_SS22_InClass/Woche_10/Übung/TweetsPython_Cleaned.csv')
-dataset['text'] = dataset['text'] .astype('str')
-vocab, M = word_count(dataset['text'])
-
-S = similarity(M)
-S = pd.DataFrame(S.todense())
-
-indexs = S[37].sort_values(ascending=False).iloc[:6].index
-print([text for text in dataset['text'][indexs]])
